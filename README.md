@@ -1,1 +1,1 @@
-# elexis - A Blockchain Voting App.
+# ELEXIS - A Blockchain Voting App.
