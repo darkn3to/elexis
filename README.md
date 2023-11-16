@@ -42,7 +42,9 @@
 
 ###
 
-<p align="left">1. Open a terminal.<br><br>2. Clone the repository by using the command <br><br>3. Download and install node.js. Add it to your path.<br><br>4. Install hardhat by npx hardhat then  add init and compile.<br><br>5. Create a .env file as follows:</p>
+<p align="left">1. Open a terminal.<br><br>2. Clone the repository by using the command <br><br>3. Download and install node.js. Add it to your path.<br><br>4. Install hardhat by running the following command in the terminal: ```npx hardhat``` <br>then<br>```npx hardhat init``` and ```npx hardhat compile```.<br><br>5. Create a .env file as follows:<br>```API_URL="https://volta-rpc.energyweb.org/"
+PRIVATE_KEY="{THE_KEY_IN_YOUR_METAMASK_ACCOUNT}"
+CONTRACT_ADDRESS="{YOUR_CONTRACT_ADDRESS}"```</p>
 
 ###
 
@@ -50,7 +52,7 @@
 
 ###
 
-<p align="left">1. Open deploy.js and add/remove names as per requirement.<br><br>2. Runt the command: npx hardhat run --network volta scripts/deploy.js <br><br>3. Copy paste the generated contract address into the .env file.<br><br>4. Deploy index.html using live server.</p>
+<p align="left">1. Add MetaMask extension to your browser and create an account if not already created.<br><br>2. Open deploy.js and add/remove names as per requirement.<br><br>3. Runt the command: npx hardhat run --network volta scripts/deploy.js <br><br>4. Copy paste the generated contract address into the .env file.<br><br>5. Deploy index.html using live server.</p>
 
 ###
 
