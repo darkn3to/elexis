@@ -71,3 +71,17 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
 
 ## Live Demo
    [Elexis](https://elexis.netlify.app)
+
+## Screen Shots
+
+![candidates](https://github.com/darkn3to/elexis/assets/62509177/11af3759-521d-4016-8ae8-796550518bdf)
+
+![winner](https://github.com/darkn3to/elexis/assets/62509177/6398e6b0-5ddc-4e55-ac66-df62ab208c4f)
+
+![voting_page_interface](https://github.com/darkn3to/elexis/assets/62509177/2de08c17-60d5-477e-a24c-36cec9270ff3)
+
+![vote_status](https://github.com/darkn3to/elexis/assets/62509177/a5f16516-8247-4745-b937-c695fa7db018)
+
+![view_candidates](https://github.com/darkn3to/elexis/assets/62509177/944cd372-679d-4556-85c6-11794dcdf86b)
+
+![connect_metamask](https://github.com/darkn3to/elexis/assets/62509177/79dd0dc9-3c1b-4f62-8a2c-400df58c5fb8)
