@@ -1,0 +1,110 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\hardhat\\contracts\\Voting.sol": {
+      "lastModificationDate": 1699024481263,
+      "contentHash": "8c77f2a3cad6cafb66b98f1dfa0fd044",
+      "sourceName": "contracts/Voting.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Voting"
+      ]
+    },
+    "D:\\dhruv's code\\hardhat2\\frontend2\\contracts\\Voting.sol": {
+      "lastModificationDate": 1699521000343,
+      "contentHash": "8c77f2a3cad6cafb66b98f1dfa0fd044",
+      "sourceName": "contracts/Voting.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Voting"
+      ]
+    },
+    "D:\\frontend2\\contracts\\Voting.sol": {
+      "lastModificationDate": 1700127508720,
+      "contentHash": "753ff7308dd6717969121ffbaa5b85d7",
+      "sourceName": "contracts/Voting.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Voting"
+      ]
+    }
+  }
+}
