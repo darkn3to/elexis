@@ -2,82 +2,76 @@
 
 <h1 align="center">ELEXIS - A Blockchain Voting App</h1>
 
-###
+# ELEXIS - A Blockchain Voting App
 
-<br clear="both">
+Welcome to Elexis, a decentralized voting system built on the Volta testnet blockchain. This secure and transparent solution guarantees tamper-proof voting records, enabling users to cast their votes remotely while prioritizing anonymity and fraud prevention. Dive into this project for a dependable and decentralized approach to voting processes.
 
-<p align="left">Welcome to Elexis, a decentralized voting system built on the Volta testnet blockchain. This secure and transparent solution guarantees tamper-proof voting records, enabling users to cast their votes remotely while prioritizing anonymity and fraud prevention. Dive into this project for a dependable and decentralized approach to voting processes.</p>
+## Features
 
-###
+• Simple and elegant UI for a seamless voting experience.
 
-<br clear="both">
+• User-initiated election setup without a complex admin panel.
 
-<h3 align="left">Features</h3>
+• Utilizes the Volta testnet for secure transaction processing.
 
-###
+• Leverages blockchain for fraudless and transparent voting.
 
-<br clear="both">
+• Ensures tamper-proof voting records.
 
-<p align="left">• Simple and elegant UI for a seamless voting experience.<br> • User-initiated election setup without a complex admin panel.<br> • Utilizes the Volta testnet for secure transaction processing.<br> • Leverages blockchain for fraudless and transparent voting.<br> • Ensures tamper-proof voting records.<br> • Prioritizes user anonymity.<br> • Maintains transparency in the entire voting process.<br> • Utilizes blockchain features to prevent fraud, ensuring electoral integrity.</p>
+• Prioritizes user anonymity.
 
-###
+• Maintains transparency in the entire voting process.
 
-<h3 align="left">Requirements</h3>
+• Utilizes blockchain features to prevent fraud, ensuring electoral integrity.
 
-###
+## Requirements
+• HardHat
 
-<p align="left">HardHat<br>MetaMask <br>Live Server Extension</p>
+• MetaMask
 
-###
+• Live Server Extension
 
-<h3 align="left">Languages used</h3>
+## Installation
 
-###
+1. Open a terminal.
 
-<p align="left">Node.js<br>Solidity</p>
+2. Clone the repository by using the command
 
-###
+3. Download and install node.js. Add it to your path.
 
-<h3 align="left">Installation</h3>
+4. Install hardhat by running the following command in the terminal: 
+   ```cmd 
+   npx hardhat
+   ```
+   then
+   ```cmd
+   npx hardhat init
+   ``` 
+   and 
+   ```cmd
+   npx hardhat compile
+   ```
 
-###
+5. Create a .env file as follows:
+   ```.env
+    API_URL="https://volta-rpc.energyweb.org/"
+    PRIVATE_KEY="{THE_KEY_IN_YOUR_METAMASK_ACCOUNT}" 
+    CONTRACT_ADDRESS="{YOUR_CONTRACT_ADDRESS}" 
+    ```
 
-<p align="left">1. Open a terminal.<br><br>2. Clone the repository by using the command <br><br>3. Download and install node.js. Add it to your path.<br><br>4. Install hardhat by running the following command in the terminal: 
-  ```cmd
-  npx hardhat
-  ```
-  <br>then<br>
-  ```cmd 
-  npx hardhat init
-  ``` and 
-  ```cmd 
-  npx hardhat compile
-  ```.<br><br>5. Create a .env file as follows:<br>
-  ```.env
-  API_URL="https://volta-rpc.energyweb.org/"
-  PRIVATE_KEY="{THE_KEY_IN_YOUR_METAMASK_ACCOUNT}"
-  CONTRACT_ADDRESS="{YOUR_CONTRACT_ADDRESS}"
-  ```</p>
-  ```.env
-  API_URL="https://volta-rpc.energyweb.org/"
-  PRIVATE_KEY="{THE_KEY_IN_YOUR_METAMASK_ACCOUNT}"
-  CONTRACT_ADDRESS="{YOUR_CONTRACT_ADDRESS}"
-  ```
+## Usage
 
-###
+1. Add MetaMask extension to your browser and create an account if not already created.
 
-<h3 align="left">Usage</h3>
+2. Open deploy.js and add/remove names as per requirement.
 
-###
+3. Run the command:
+    ```cmd
+    npx hardhat run --network volta scripts/deploy.js
+    ```
+4. Copy paste the generated contract address into the .env file.
 
-<p align="left">1. Add MetaMask extension to your browser and create an account if not already created.<br><br>2. Open deploy.js and add/remove names as per requirement.<br><br>3. Runt the command: npx hardhat run --network volta scripts/deploy.js <br><br>4. Copy paste the generated contract address into the .env file.<br><br>5. Deploy index.html using live server.</p>
+5. Deploy index.html using live server.
 
-###
-
-<h3 align="left">Live Demo</h3>
-
-###
-
-<p align="left">https://elexis.netlify.app</p>
-
-###
+## Live Demo
+   [Elexis](https://elexis.netlify.app)
