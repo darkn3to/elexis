@@ -28,7 +28,6 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
 • Live Server Extension
 
 ## Installation
-
 1. Open a terminal.
 
 2. Clone the repository by using the command
