@@ -1,8 +1,4 @@
-<br clear="both">
-
 <h1 align="center">ELEXIS - A Blockchain Voting App</h1>
-
-# ELEXIS - A Blockchain Voting App
 
 Welcome to Elexis, a decentralized voting system built on the Volta testnet blockchain. This secure and transparent solution guarantees tamper-proof voting records, enabling users to cast their votes remotely while prioritizing anonymity and fraud prevention. Dive into this project for a dependable and decentralized approach to voting processes.
 
