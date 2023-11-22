@@ -19,11 +19,11 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
 • Utilizes blockchain features to prevent fraud, ensuring electoral integrity.
 
 ## Requirements
-• HardHat
+• <b>HardHat</b> for creating and managing our smart contracts.
 
-• MetaMask
+• <b>MetaMask</b> browser extension for performing transactions.
 
-• Live Server Extension
+• <b>Live Server</b> Extension for running our code locally.
 
 ## Installation
 1. Open terminal.
