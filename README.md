@@ -49,7 +49,7 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
    npx hardhat compile
    ```
 
-5. Create a .env file as follows:
+5. Create .env file as follows:
    ```.env
     API_URL="https://volta-rpc.energyweb.org/"
     PRIVATE_KEY="{THE_HIDDEN_KEY_IN_YOUR_METAMASK_ACCOUNT}" 
@@ -66,7 +66,7 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
     ```cmd
     npx hardhat run --network volta scripts/deploy.js
     ```
-4. Copy paste the generated contract address into the main.js file. <b>The contract address generated here is different from the TOKEN CONTRACT ADDRESS.</b>
+4. Copy paste the generated contract address into the main.js file. <b>The contract address generated here is different from the TOKEN CONTRACT ADDRESS used in .env file.</b>
 
 5. Deploy index.html using live server.
 
