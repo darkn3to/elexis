@@ -23,7 +23,7 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
 
 • <b>MetaMask</b> browser extension for performing transactions.
 
-• <b>Live Server</b> Extension for running our code locally.
+• <b>Live Server</b> extension for running our web-app locally.
 
 ## Installation
 1. Open terminal.
