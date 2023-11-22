@@ -26,13 +26,13 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
 • Live Server Extension
 
 ## Installation
-1. Open a terminal.
+1. Open terminal.
 
 2. Clone the repository by using the command:
    ```cmd
    git clone https://github.com/darkn3to/elexis.git
    ```
-   or by simply downloading the zip file from the code dropdown button above.
+   or simply donwload the zip file from the code dropdown button above.
 
 3. Download and install node.js. Add it to your path.
 
