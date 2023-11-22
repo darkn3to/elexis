@@ -12,8 +12,6 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
 
 • Leverages blockchain for fraudless and transparent voting.
 
-• Ensures tamper-proof voting records.
-
 • Prioritizes user anonymity.
 
 • Maintains transparency in the entire voting process.
