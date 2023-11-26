@@ -72,8 +72,8 @@
       ]
     },
     "D:\\frontend2\\contracts\\Voting.sol": {
-      "lastModificationDate": 1700127508720,
-      "contentHash": "753ff7308dd6717969121ffbaa5b85d7",
+      "lastModificationDate": 1700128257998,
+      "contentHash": "771a3d33ead38cd74136b2fcf142c2e0",
       "sourceName": "contracts/Voting.sol",
       "solcConfig": {
         "version": "0.8.19",

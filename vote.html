@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Elexis</title>
+  <title>Elexis - Vote</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png">
@@ -35,7 +35,8 @@
       <div class="outer-nav--return"></div>
       <div id="viewport" class="l-viewport">
         <div class="l-wrapper">
-          <a class="header--logo invisible" href="elexis.netlify.app"><img src="assets/img/logo.png" alt="Elexis"></a>
+          <a class="header--logo invisible" href="https://elexis.netlify.app"><img src="assets/img/logo.png"
+              alt="Elexis"></a>
           <nav class="l-side-nav">
             <ul class="side-nav">
               <li class="is-active"></li>
@@ -44,18 +45,22 @@
           <ul class="l-main-content main-content">
             <li class="l-section section section--is-active">
               <div class="intro">
-                <!-- <h2>The Candidates</h2> -->
                 <div class="work-request">
-                  <button class="primary-button" onclick="connectMetamask('1')"><span class="primary-button__text">Connect MetaMask</span></button>
+                  <button class="primary-button" onclick="connectMetamask('1')"><span
+                      class="primary-button__text">Connect MetaMask</span></button>
                   <p id="metamasknotification1"></p>
                   <div class="inputNumber"><span class="input-number-decrement">–</span><input id="vote" type="text"
                       value="1" min="0" max="2"><span class="input-number-increment">+</span></div>
-                  <button class="primary-button" onclick="addVote()"><span class="primary-button__text">Vote</span></button>
+                  <p></p>
+                  <button class="primary-button" onclick="addVote()"><span
+                      class="primary-button__text">Vote</span></button>
                   <p id="cand"></p>
-                  <button class="primary-button" onclick="voteStatus()"><span class="primary-button__text">Voting Status</span></button>
+                  <button class="primary-button" onclick="voteStatus()"><span class="primary-button__text">Voting
+                      Status</span></button>
                   <p id="status"></p>
                   <p id="time"></p>
-                  <button class="primary-button" onclick="redirectToCandidatePage()"><span class="primary-button__text">View Candidates</span></button>
+                  <button class="primary-button" onclick="redirectToCandidatePage()"><span
+                      class="primary-button__text">View Candidates</span></button>
                 </div>
             </li>
           </ul>
@@ -66,7 +71,6 @@
       <li class="is-active">Home</li>
     </ul>
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
   <script src="assets/js/functions-min.js"></script>
@@ -109,15 +113,15 @@
             var value = el[0].value;
             value++;
             if (!max || value <= max) {
-              el[0].value = value++;
+              el[0].value = value;
             }
           }
         }
-      }
-    })();
+      };
 
-    inputNumber($('#vote'));
-  </script>
+      inputNumber($('#vote'));
+    })();
+</script>
 </body>
 
 </html>
