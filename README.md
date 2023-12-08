@@ -49,7 +49,7 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
    npx hardhat compile
    ```
 
-5. Create .env file as follows:
+5. Create .env file in the root directory as follows :
    ```.env
     API_URL="https://volta-rpc.energyweb.org/"
     PRIVATE_KEY="{THE_HIDDEN_KEY_IN_YOUR_METAMASK_ACCOUNT}" 
