@@ -60,7 +60,7 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
 
 1. Add MetaMask extension to your browser and create an account if not already created.
  
-   • You would also need to add Volta TestNet       to your account. Go to [this link](https://thirdweb.com/energy-web-volta-testnet) to get the details required to do so.     <br> Then goto [this link](https://voltafaucet.energyweb.org/) to add Volta tokens needed to perform transactions.
+   • You would also need to add Volta TestNet       to your account. Go to [this link](https://thirdweb.com/energy-web-volta-testnet) to get the details required to do so.      Then goto [this link](https://voltafaucet.energyweb.org/) to add Volta tokens needed to perform transactions.
 
 2. Open deploy.js and add/remove names as per requirement.
 
