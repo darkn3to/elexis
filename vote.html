@@ -50,7 +50,7 @@
                       class="primary-button__text">Connect MetaMask</span></button>
                   <p id="metamasknotification1"></p>
                   <div class="inputNumber"><span class="input-number-decrement">–</span><input id="vote" type="text"
-                      value="1" min="0" max="2"><span class="input-number-increment">+</span></div>
+                      value="1" min="0" readonly><span class="input-number-increment">+</span></div>
                   <p></p>
                   <button class="primary-button" onclick="addVote()"><span
                       class="primary-button__text">Vote</span></button>
@@ -81,47 +81,40 @@
   </script>
   <script>
     (function () {
-
       window.inputNumber = function (el) {
-
         var min = el.attr('min') || false;
         var max = el.attr('max') || false;
-
         var els = {};
-
         els.dec = el.prev();
         els.inc = el.next();
-
         el.each(function () {
           init($(this));
         });
-
         function init(el) {
-
           els.dec.on('click', decrement);
           els.inc.on('click', increment);
-
           function decrement() {
-            var value = el[0].value;
+            var value = parseInt(el.val(), 10);
             value--;
-            if (!min || value >= min) {
-              el[0].value = value;
+            if ((!min || value >= min) && (!max || value <= max)) {
+              el.val(value);
             }
           }
-
           function increment() {
-            var value = el[0].value;
+            var value = parseInt(el.val(), 10);
             value++;
-            if (!max || value <= max) {
-              el[0].value = value;
+            if ((!min || value >= min) && (!max || value <= max)) {
+              el.val(value);
             }
           }
         }
       };
-
-      inputNumber($('#vote'));
+      updateMaxAttribute($('#vote')).then(() => {
+        inputNumber($('#vote'));
+      });
     })();
-</script>
+
+  </script>
 </body>
 
 </html>
