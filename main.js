@@ -269,6 +269,19 @@ const getAllCandidates = async () => {
   }
 }
 
+function updateMaxAttribute(el) {
+  return new Promise(async (resolve) => {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    await provider.send("eth_requestAccounts", []);
+    const signer = provider.getSigner();
+    const contractInstance = new ethers.Contract(contractAddress, contractAbi, signer);
+    const candidates = await contractInstance.getAllVotesOfCandiates();
+    const max = candidates.length - 1;
+    el.attr('max', max.toString());
+    resolve();  
+  });
+}
+
 const getWinner = async () => {
   if (WALLET_CONNECTED != 0) {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
