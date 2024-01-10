@@ -25,7 +25,6 @@ contract Voting {
             _candidateIndex < candidates.length,
             "Invalid candidate index."
         );
-
         candidates[_candidateIndex].voteCount++;
         voters[msg.sender] = true;
     }
