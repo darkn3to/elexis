@@ -10,7 +10,11 @@ contract Voting {
     mapping(address => bool) public voters;
     uint256 public votingStart, votingEnd;
     constructor(string[] memory _candidateNames, uint256 _durationInMinutes) {
-        candidates = _candidateNames.map(name => Candidate({name: name, voteCount: 0}));
+        for (uint256 i = 0; i < _candidateNames.length; i++) {
+            candidates.push(
+                Candidate({name: _candidateNames[i], voteCount: 0})
+            );
+        }
         owner = msg.sender;
         votingStart = block.timestamp;
         votingEnd = block.timestamp + (_durationInMinutes * 1 minutes);
