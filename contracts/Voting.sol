@@ -19,9 +19,6 @@ contract Voting {
         require(msg.sender == owner);
         _;
     }
-    function addCandidate(string memory _name) public onlyOwner {
-        candidates.push(Candidate({name: _name, voteCount: 0}));
-    }
     function vote(uint256 _candidateIndex) public {
         require(!voters[msg.sender], "You have already voted.");
         require(
