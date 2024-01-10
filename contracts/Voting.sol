@@ -19,10 +19,6 @@ contract Voting {
         votingStart = block.timestamp;
         votingEnd = block.timestamp + (_durationInMinutes * 1 minutes);
     }
-    modifier onlyOwner() {
-        require(msg.sender == owner);
-        _;
-    }
     function vote(uint256 _candidateIndex) public {
         require(!voters[msg.sender], "You have already voted.");
         require(
