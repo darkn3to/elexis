@@ -28,6 +28,14 @@ contract Voting {
         candidates[_candidateIndex].voteCount++;
         voters[msg.sender] = true;
     }
+    function ok() public view returns (bool) {
+        if (!voters[msg.sender]) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
     function getAllVotesOfCandiates() public view returns (Candidate[] memory) {
         return candidates;
     }
