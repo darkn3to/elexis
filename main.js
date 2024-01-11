@@ -1,5 +1,5 @@
 let WALLET_CONNECTED = "";
-let contractAddress = "0x0eE720d33eDA2DEd29c8E11baE7aeA8BeEb8d4d7";
+let contractAddress = "0x2a8Bd9D8D493b2083CFf6aB0233359F1CB57Dd2B";
 let contractAbi = [
   {
     "inputs": [
@@ -87,6 +87,19 @@ let contractAbi = [
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ok",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
       }
     ],
     "stateMutability": "view",
@@ -191,6 +204,7 @@ const connectMetamask = async (section) => {
   WALLET_CONNECTED = await signer.getAddress();
   var element = document.getElementById(`metamasknotification${section}`);
   element.innerHTML = "Metamask ID is connected.";
+  updateMaxAttribute();
 }
 
 const voteStatus = async () => {
@@ -222,22 +236,26 @@ const addVote = async () => {
     const signer = provider.getSigner();
     const contractInstance = new ethers.Contract(contractAddress, contractAbi, signer);
     const currentStatus = await contractInstance.getVotingStatus();
+    const hasVoted = await contractInstance.ok();
     var cand = document.getElementById("cand");
     if (currentStatus == 1) {
-      cand.innerHTML = "Please wait... ";
-      const tx = await contractInstance.vote(name.value);
-      await tx.wait();
-      cand.innerHTML = "Your vote has been recorded. ";
+      if (hasVoted) {
+        cand.innerHTML = "You have already voted.";
+      } else {
+        cand.innerHTML = "Please wait... ";
+        const tx = await contractInstance.vote(name.value);
+        await tx.wait();
+        cand.innerHTML = "Your vote has been recorded. ";
+      }
+    } else {
+      cand.innerHTML = "Cannot Vote. Voting has ended.";
     }
-    else {
-      cand.innerHTML = "Cannot Vote. Voting has ended."
-    }
-  }
-  else {
+  } else {
     var cand = document.getElementById("cand");
     cand.innerHTML = "Please connect your MetaMask ID first. ";
   }
 }
+
 
 const getAllCandidates = async () => {
   if (WALLET_CONNECTED != 0) {
