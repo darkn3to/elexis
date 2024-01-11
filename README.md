@@ -32,7 +32,7 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
    ```cmd
    git clone https://github.com/darkn3to/elexis.git
    ```
-   or simply donwload the zip file from the code dropdown button above.
+   or simply download the zip file from the code dropdown button above.
 
 3. Download and install node.js. Add it to your path.
 
