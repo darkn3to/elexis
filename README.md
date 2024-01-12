@@ -68,9 +68,8 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
     ```cmd
     npx hardhat run --network volta scripts/deploy.js
     ```
-4. Copy paste the generated contract address into the main.js file. <b>The contract address generated here is different from the TOKEN CONTRACT ADDRESS used in .env file.</b>
 
-5. Deploy index.html using live server.
+4. Deploy index.html using live server.
 
 ## Some Screen Shots
 
