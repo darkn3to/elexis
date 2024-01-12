@@ -52,8 +52,8 @@ Welcome to Elexis, a decentralized voting system built on the Volta testnet bloc
 5. Create .env file in the root directory as follows :
    ```.env
     API_URL="https://volta-rpc.energyweb.org/"
-    PRIVATE_KEY="{THE_HIDDEN_KEY_IN_YOUR_METAMASK_ACCOUNT}" 
-    CONTRACT_ADDRESS="{TOKEN_CONTRACT_ADDRESS}" 
+    PRIVATE_KEY="THE_HIDDEN_KEY_IN_YOUR_METAMASK_ACCOUNT" 
+    CONTRACT_ADDRESS="TOKEN_CONTRACT_ADDRESS" 
     ```
 
 ## Usage
