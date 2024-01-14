@@ -61,7 +61,7 @@ This is Elexis, a decentralized voting system built on the Volta testnet blockch
     npx hardhat run --network volta scripts/deploy.js
     ```
 
-4. Deploy index.html using live server.
+4. Deploy the dApp using live server.
 
 ## Some Screen Shots
 
